@@ -29,6 +29,7 @@ body{
     bottom: -30px;
     left: 15px;
     font-size: 45px;
+    font-weight: 550;
   scale: 1 0;
   animation: scale 2s 5s forwards;
 }
