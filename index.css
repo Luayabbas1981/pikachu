@@ -35,7 +35,6 @@ p
     left: 15px;
     font-size: 45px;
     font-weight: 600;
-    color: #607d8b;
   scale: 1 0;
   animation: scale 2s 5s forwards;
 }
@@ -440,7 +439,7 @@ background-color:var(--frameColor);
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
-    animation: press 1.2s 4s infinite alternate;
+    animation: press 1.4s 4s infinite alternate;
     transform: none;
 }
 
