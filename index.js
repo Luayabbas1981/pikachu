@@ -1,8 +1,9 @@
 const frame = document.querySelector(".frame")
-const frameArr = Array.from(document.querySelectorAll(".frame > div "))
-
-let colors=["#f44336","#e91e63","#9c27b0","#673ab7","#2196f3","#00bcd4","#009688",
-"#ff9800","#c73000","#795548","#9e9e9e"]
+const frameArr = Array.from(document.querySelectorAll(".frame > div:not(.div35) "))
+const btn = frameArr[34]
+console.log(btn)
+let colors=["#f44336","#e91e63","#9c27b0","#673ab7","#2196f3","#0390a2","#009688",
+"#ff9800","#c73000","#795548","#7c7b7b"]
 
    
     frameArr.map((item)=>{
@@ -15,14 +16,13 @@ let colors=["#f44336","#e91e63","#9c27b0","#673ab7","#2196f3","#00bcd4","#009688
 console.log(frameArr)
 
 
-  setInterval(()=>{
+  ChangeColor= ()=>{
     let c = Math.floor(Math.random()* colors.length )
+
     frameArr.map((item,i)=>{
-        
-       
-        
         item.style=`--mainColor:${colors[c]}`
+
     })
 
-},4800)   
+  }  
 

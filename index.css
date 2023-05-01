@@ -34,7 +34,7 @@ p
     bottom: -30px;
     left: 15px;
     font-size: 45px;
-    font-weight: 550;
+    font-weight: 600;
     color: #607d8b;
   scale: 1 0;
   animation: scale 2s 5s forwards;
@@ -432,14 +432,24 @@ background-color:var(--frameColor);
     border-radius: 50%;
     background-color: var(--frameColor);
 }
-.div35{
+#div35{
     position: absolute;
     top: 537px;
     left: 321px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: var(--mainColor);
+    cursor: pointer;
+    animation: press 1.2s 4s infinite alternate;
+    transform: none;
+}
+
+@keyframes press {
+    from{
+        background-color: #fff;
+    }to{
+        background-color: red;
+    }
 }
 .div36{
     position: absolute;
