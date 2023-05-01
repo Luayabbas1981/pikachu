@@ -22,7 +22,8 @@ body{
        translate: -110px -100px;
     }
     .sign{
-      transform: translateY(-70px);
+      transform: translateY(-70px) scale(1.3);
+     
        
     }
 }
