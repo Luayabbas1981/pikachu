@@ -445,7 +445,7 @@ background-color:var(--frameColor);
 
 @keyframes press {
     from{
-        background-color: #fff;
+        background-color: var(--frameColor);
     }to{
         background-color: red;
     }
