@@ -7,7 +7,7 @@ let colors=["#f44336","#e91e63","#9c27b0","#673ab7","#2196f3","#0390a2","#009688
 "#2a3ca1","#32aee5","#d0b007","#e5c100"]
 
 let c = Math.floor(Math.random()* colors.length )
-    frameArr.map((item)=>{
+frameArr.map((item)=>{
         let x = Math.floor(Math.random()* 20)+1
         let y = Math.floor(Math.random()* 20)+1
        item.style=`--mainColor:${colors[c]} ; --x:${x + "px"} ; --y:${y + "px"} `
@@ -25,3 +25,11 @@ let c = Math.floor(Math.random()* colors.length )
 
   }  
 
+function mixColors (){
+    frameArr.map((item)=>{
+        let c = Math.floor(Math.random()* colors.length )
+        let x = Math.floor(Math.random()* 20)+1
+        let y = Math.floor(Math.random()* 20)+1
+       item.style=`--mainColor:${colors[c]} ; --x:${x + "px"} ; --y:${y + "px"} `
+    } )
+}
