@@ -20,7 +20,7 @@ body{
     }
     .frame>div{
         
-       translate: -110px;
+       translate: -110px -100px;
     }
 }
 
