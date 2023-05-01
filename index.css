@@ -27,6 +27,9 @@ body{
      
        
     }
+    .mix{
+        transform:translateX(-170px) translateY(-70px) scale(1.3);
+    }
 }
 
 .sign
