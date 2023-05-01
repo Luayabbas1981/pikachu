@@ -1,0 +1,577 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: "Passions Conflict", cursive;
+    --frameColor:#e7e6e6;
+
+}
+
+@media(max-width:600px){
+    body{
+        background-color: var(--frameColor);
+    }
+    .frame{
+        
+        scale: .7;
+    }
+    .frame>div{
+        
+       translate: -110px;
+    }
+}
+
+.sign
+{
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    font-size: 45px;
+  scale: 1 0;
+  animation: scale 2s 5s forwards;
+}
+@keyframes scale {
+    to{
+        scale: 1;
+    }
+}
+.frame{
+perspective: 300px;
+position: relative;
+width: 600px;
+height: 700px;
+background-color:var(--frameColor);
+
+}
+.frame >div{
+  
+    animation: come-in 3s linear forwards;
+    transform: translateX(calc(-20 * var(--x))) translateY(calc(-20 * var(--x))); 
+}
+@keyframes come-in{
+    to{
+        transform: translateX(0px) translateY(0px);
+}
+}
+
+.div1{
+    position: absolute;
+    top: 213px;
+    left: 230px;
+    width: 41px;
+    height: 38px;
+    background-color: var(--mainColor);
+    border-radius: 1rem;
+    
+}
+.div1::after{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 25px;
+    width: 7px;
+    height: 12px;
+    background-color: var(--frameColor);
+    border-radius: 1rem;
+    rotate: 9deg;
+}
+.div2{
+    position: absolute;
+    top: 196px;
+    left: 361px;
+    width: 41px;
+    height: 38px;
+    background-color: var(--mainColor);
+    border-radius: 50% 50% 52% 49% / 26% 27% 36% 35%;
+    transform: rotate(16deg);
+}
+.div2::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 9px;
+    height: 10px;
+    background-color: var(--frameColor);
+    border-radius: 1rem;
+    rotate: 345deg;
+}
+.div3{
+    position: absolute;
+    top: 260px;
+    left: 224px;
+    width: 41px;
+    height: 38px;
+    background-color: var(--mainColor);
+    border-radius: 50% 50% 50% 50% / 31% 34% 34% 35%;
+    rotate: 250deg;
+}
+.div4{
+    position: absolute;
+    top: 232px;
+    left: 395px;
+    width: 34px;
+    height: 45px;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    rotate: 5deg;
+  
+}
+.div5{
+    position: absolute;
+    top: 147px;
+    left: 82px;
+    width: 149px;
+    height: 66px;
+    border: 4px solid var(--mainColor);
+    border-radius: 4% 88%;
+    rotate: 144deg;
+}
+.div6{
+    position: absolute;
+    top: 157px;
+    left: 87px;
+    width: 107px;
+    height: 71px;
+    background-color: var(--mainColor);
+    border-radius: 1% 88%;
+   rotate: 135deg;
+
+}
+.div7{
+    position: absolute;
+    top: 69px;
+    left: 253px;
+    width: 144px;
+    height: 59px;
+    border: 4px solid var(--mainColor);
+    border-radius: 4% 88%;
+   rotate: 198deg;
+}
+.div8{
+    position: absolute;
+    top: 55px;
+    left: 264px;
+    width: 69px;
+    height: 60px;
+    background-color: var(--mainColor);
+    border-radius: 1% 88%;
+    rotate: 186deg;
+}
+.div9{
+    position: absolute;
+    top: 227px;
+    left: 305px;
+    width: 17px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+}
+.div10{
+    position: absolute;
+    top: 237px;
+    left: 317px;
+    width: 30px;
+    height: 26px;
+    box-shadow: inset -2px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 52deg;
+}
+.div11{
+    position: absolute;
+    top: 246px;
+    left: 284px;
+    width: 30px;
+    height: 20px;
+    box-shadow: inset 2px 3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 182deg;
+}
+.div12{
+    position: absolute;
+    top:264px;
+    left: 289px;
+    width: 38px;
+    height: 36px;
+    box-shadow: inset 2px 3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 276deg;
+}
+.div13{
+    position: absolute;
+    top: 261px;
+    left: 315px;
+    width: 39px;
+    height: 36px;
+    box-shadow: inset -3px -2px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 340deg;
+}
+.div14{
+    position: absolute;
+    top: 283px;
+    left: 395px;
+    width: 23px;
+    height: 36px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 15deg;
+}
+.div15{
+    position: absolute;
+    top: 300px;
+    left: 247px;
+    width: 23px;
+    height: 36px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 92deg;
+}
+.div16{
+    position: absolute;
+    top: 393px;
+    left: 258px;
+    width: 70px;
+    height: 47px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 60deg;
+}
+.div17{
+    position: absolute;
+    top: 369px;
+    left: 278px;
+    width: 83px;
+    height: 31px;
+    box-shadow: inset -3px -6px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 250deg;
+}
+.div18{
+    position: absolute;
+    top: 287px;
+    left: 417px;
+    width: 99px;
+    height: 31px;
+    box-shadow: inset -3px -6px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 316deg;
+}
+.div19{
+    position: absolute;
+    top: 230px;
+    left: 444px;
+    width: 15px;
+    height: 36px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 218deg;
+}
+.div20{
+    position: absolute;
+    top: 325px;
+    left: 420px;
+    width: 14px;
+    height: 43px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 154deg;
+}
+.div21{
+    position: absolute;
+    top: 364px;
+    left: 425px;
+    width: 37px;
+    height: 54px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 264deg;
+}
+.div22{
+    position: absolute;
+    top: 461px;
+    left: 255px;
+    width: 157px;
+    height: 24px;
+    box-shadow: inset -3px -3px 0px 0px var(--mainColor);
+    border-radius: 78% 29% 95% 7% / 56% 0% 109% 24%;
+    rotate: 180deg;
+}
+.div23{
+    position: absolute;
+    top: 356px;
+    left: 175px;
+    width: 108px;
+    height: 34px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 298deg;
+}
+.div24{
+    position: absolute;
+    top: 181px;
+    left: 376px;
+    width: 74px;
+    height: 20px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 264deg;
+}
+.div25{
+    position: absolute;
+    top: 139px;
+    left: 245px;
+    width: 89px;
+    height: 22px;
+    box-shadow: inset -2px -2px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 176deg;
+}
+.div26{
+    position: absolute;
+    top: 217px;
+    left: 186px;
+    width: 81px;
+    height: 19px;
+    box-shadow: inset -3px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 100deg;
+}
+.div27{
+    position: absolute;
+    top: 544px;
+    left: 174px;
+    width: 70px;
+    height: 21px;
+    box-shadow: inset -3px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 96deg;
+}
+.div28{
+    position: absolute;
+    top: 244px;
+    left: 69px;
+    width: 145px;
+    height: 34px;
+    box-shadow: inset -6px -6px 0px 0px var(--mainColor);
+    rotate: 162deg;
+}
+.div29{
+    position: absolute;
+    top: 283px;
+    left: 89px;
+    width: 118px;
+    height: 41px;
+    box-shadow: 7px -6px 0px 0px var(--mainColor);
+    rotate: 156deg;
+}
+.div30{
+    position: absolute;
+    top: 313px;
+    left: 197px;
+    width: 60px;
+    height: 41px;
+    box-shadow: 6px 5px 0px 0px var(--mainColor);
+    rotate: 104deg;
+}
+.div31{
+    position: absolute;
+    top: 550px;
+    left: 221px;
+    width: 142px;
+    height: 128px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 66deg;
+}
+.div32{
+    position: absolute;
+    top: 517px;
+    left: 365px;
+    width: 115px;
+    height: 128px;
+    box-shadow: inset -3px -6px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 351deg;
+}
+.div33{
+    position: absolute;
+    top: 503px;
+    left: 207px;
+    width: 258px;
+    height: 66px;
+    box-shadow: inset -21px -21px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 351deg;
+}
+.div34{
+    position: absolute;
+    top: 518px;
+    left: 304px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+}
+.div34::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--frameColor);
+}
+.div35{
+    position: absolute;
+    top: 537px;
+    left: 321px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+}
+.div36{
+    position: absolute;
+    top: 391px;
+    left: 452px;
+    width: 28px;
+    height: 95px;
+    border-radius: 50%;
+    box-shadow: 4px 15px 0px 0px var(--mainColor);
+    rotate: 49deg;
+}
+.div37{
+    position: absolute;
+    top: 410px;
+    left: 445px;
+    width: 17px;
+    height: 62px;
+    border-radius: 50%;
+    box-shadow: 4px 15px 0px 0px var(--mainColor);
+    rotate: 229deg;
+}
+.div38{
+    position: absolute;
+    top: 410px;
+    left: 476px;
+    width: 19px;
+    height: 24px;
+    box-shadow: inset -6px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 355deg;
+}
+.div39{
+    position: absolute;
+    top: 411px;
+    left: 187px;
+    width: 26px;
+    height: 93px;
+    border-radius: 50%;
+    box-shadow: -4px 15px 0px 0px var(--mainColor);
+    rotate: 313deg;
+}
+.div40{
+    position: absolute;
+    top: 432px;
+    left: 208px;
+    width: 16px;
+    height: 54px;
+    border-radius: 50%;
+    box-shadow: -4px 15px 0px 0px var(--mainColor);
+    rotate: 134deg;
+}
+.div41{
+    position: absolute;
+    top: 434px;
+    left: 177px;
+    width: 19px;
+    height: 24px;
+    box-shadow: inset -4px -3px 0px 0px var(--mainColor);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    rotate: 100deg;
+}
+.div42{
+    position: absolute;
+    top: 413px;
+    left: 316px;
+    width: 31px;
+    height: 17px;
+    background-color: var(--mainColor);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    rotate: 320deg;
+}
+.div43{
+    position: absolute;
+    top: 420px;
+    left: 341px;
+    width: 11px;
+    height: 9px;
+    background-color: var(--mainColor);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    rotate: 139deg;
+}
+.div44{
+    position: absolute;
+    top: 426px;
+    left: 335px;
+    width: 11px;
+    height: 9px;
+    background-color: var(--mainColor);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    rotate: 139deg;
+}
+.div45{
+    position: absolute;
+    top: 431px;
+    left: 328px;
+    width: 11px;
+    height: 9px;
+    background-color: var(--mainColor);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    rotate: 139deg;
+}
+.div46{
+    position: absolute;
+    top: 246px;
+    left: 453px;
+    width: 39px;
+    height: 24px;
+    background-color: var(--mainColor);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    rotate: 222deg;
+}
+.div47{
+    position: absolute;
+    top: 232px;
+    left: 466px;
+    width: 15px;
+    height: 14px;
+    background-color: var(--mainColor);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    rotate: 36deg;
+}
+.div48{
+    position: absolute;
+    top: 238px;
+    left: 474px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--mainColor);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    rotate: 36deg;
+}
+.div49{
+    position: absolute;
+    top: 246px;
+    left: 483px;
+    width: 15px;
+    height: 12px;
+    background-color: var(--mainColor);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    rotate: 36deg;
+}
