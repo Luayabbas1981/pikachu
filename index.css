@@ -615,3 +615,13 @@ background-color:var(--frameColor);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     rotate: 36deg;
 }
+.div50{
+    position: absolute;
+    top: 266px;
+    left: 313px;
+    width: 14px;
+    height: 14px;
+    background-color: var(--cheekColor);
+    filter: blur(12px);
+    
+}
