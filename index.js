@@ -10,7 +10,7 @@ let c = Math.floor(Math.random()* colors.length )
 frameArr.map((item)=>{
         let x = Math.floor(Math.random()* 20)+1
         let y = Math.floor(Math.random()* 20)+1
-       item.style=`--mainColor:#7c7b7b; --x:${x + "px"} ; --y:${y + "px"} `
+       item.style=`--mainColor:#ffcb00; --x:${x + "px"} ; --y:${y + "px"} `
     } )
     
     
